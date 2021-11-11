@@ -7,7 +7,7 @@ app.use(express.urlencoded({ extended: false }));
 // Parse JSON bodies (as sent by API clients)
 app.use(express.json());
 
-app.use("/calculator", router);
+app.use("/", router);
 
 app.listen(port, () => console.log(`App listening on port ${port}!`));
 
